@@ -5,16 +5,16 @@ Accion Extra es
     Ambiente
         funcion conv_a_crc (digito:entero):caracter
             segun digito hacer 
-                =0: conv_a_crc := 0
-                =1: conv_a_crc := 1
-                =2: conv_a_crc := 2
-                =3: conv_a_crc := 3
-                =4: conv_a_crc := 4
-                =5: conv_a_crc := 5
-                =6: conv_a_crc := 6
-                =7: conv_a_crc := 7
-                =8: conv_a_crc := 8
-                =9: conv_a_crc := 9
+                =0: conv_a_crc := "0"
+                =1: conv_a_crc := "1"
+                =2: conv_a_crc := "2"
+                =3: conv_a_crc := "3"
+                =4: conv_a_crc := "4"
+                =5: conv_a_crc := "5"
+                =6: conv_a_crc := "6"
+                =7: conv_a_crc := "7"
+                =8: conv_a_crc := "8"
+                =9: conv_a_crc := "9"
             fin_segun
         fin_funcion
         s_sal: secuencia de caracteres

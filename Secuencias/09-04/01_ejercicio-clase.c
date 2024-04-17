@@ -9,7 +9,7 @@
 2) Contar cantidad de artículos vendidos de todos los artículos cuyos códigos comienzan con un carácter ingresado por el usuario. 
 
 
-Accion FILA 3 es 
+Accion FILA3 es 
     Ambiente
         s_facturas, s_detalles, s_sal: secuencia de caracteres
         v_fact, v_detalles, v_sal: caracter
@@ -35,7 +35,8 @@ Accion FILA 3 es
         Crear(s_sal)
         AVZ(s_facturas, v_fact)
         AVZ(s_detalles, v_detalles)
-        Escribir("Ingrese el caracter"); Leer(cod_ingresado) // A
+        Escribir("Ingrese el caracter");
+        Leer(cod_ingresado) // A
         cantidad := 0 
         Mientras NFDS(s_facturas) hacer 
             bandera := falso
@@ -52,7 +53,7 @@ Accion FILA 3 es
             FinPara
             bandera := cod_ingresado = v_detalles
             Mientras (v_detalles <> "!") hacer 
-                Para i=1 hasta 6 hacer 
+                    Para i=1 hasta 6 hacer 
                     Grabar(s_sal, v_detalles)
                     AVZ(s_detalles, v_detalles)
                 FinPara
@@ -74,6 +75,5 @@ Accion FILA 3 es
         Cerrar(s_detalles)
         Cerrar(s_facturas)
         Cerrar(s_sal)
-FinAccion
-aaaaaaaa    
+FinAccion    
 
